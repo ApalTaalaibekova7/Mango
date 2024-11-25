@@ -1,0 +1,52 @@
+
+/* Основной контейнер */
+.main {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Прячем части изображений, выходящие за пределы */
+}
+
+/* Фон - первое изображение */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Фон заполняет всю ширину экрана */
+    height: 200px; /* Установленный размер фона */
+    z-index: -1; /* Чтобы фон был за остальными элементами */
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обеспечивает заполнение всего фона */
+}
+
+/* Контейнер с изображением продуктов и заголовком */
+.content {
+    position: relative;
+    top: auto; /* Отступ от верха, чтобы расположить элементы ниже фона */
+    text-align: center; /* Центрирование текста */
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Изображение продуктов */
+.products-img {
+    width: 300px; /* Размер изображения */
+    height: auto;
+    margin-bottom: 20px; /* Отступ от текста */
+}
+
+/* Заголовок */
+.headline {
+    font-size: 40px;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.highlight {
+    color: rgb(235, 129, 8); /* Оранжевый цвет для выделенного слова */
+}
