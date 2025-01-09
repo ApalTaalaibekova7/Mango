@@ -1,12 +1,20 @@
 /* Общий стиль для хедера */
 .header {
     display: flex;
-    align-items: center; /* Вертикальное центрирование элементов */
+    align-items: flex-start;
     justify-content: space-between; /* Равномерное распределение элементов */
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
     max-width: 1200px; /* Установка ширины хедера */
     margin: 0 auto; /* Центрирование хедера на странице */
+}
+.header-first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap; /* Позволяет переносить элементы */
 }
 
 /* Логотип */
@@ -73,8 +81,8 @@
 /* Иконки */
 .icons {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-items: flex-start;
+    gap: 15px;
 }
 
 .icon {

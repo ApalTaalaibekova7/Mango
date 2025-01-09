@@ -15,8 +15,8 @@ export default function Products() {
       id: 1,
       isOnSale: true,
       isBestSeller: true,
-      price: '155',
-      salePrice: '140',
+      price: '140',
+      salePrice: '150',
       description: 'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
       ImgCard: image1,
     },
@@ -33,8 +33,8 @@ export default function Products() {
       id: 3,
       isOnSale: true,
       isBestSeller: false,
-      price: '300',
-      salePrice: '270',
+      price: '250',
+      salePrice: '290',
       description: 'Напиток газированный лимонный, 1 л.',
       ImgCard: image3,
     },
@@ -49,10 +49,10 @@ export default function Products() {
     },
     {
         id: 5,
-        isOnSale: false,
-        isBestSeller: true,
+        isOnSale: true,
+        isBestSeller: false,
         price: '200',
-        salePrice: '',
+        salePrice: '230',
         description: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         ImgCard: image4,
     },
@@ -64,22 +64,28 @@ export default function Products() {
         salePrice: '',
         description: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         ImgCard: image5,
+        
     },
   ];
 
   return (
-    <div className="products-container">
-      {products.map((product) => (
-        <Card
-          key={product.id}
-          isOnSale={product.isOnSale}
-          isBestSeller={product.isBestSeller}
-          price={product.price}
-          salePrice={product.salePrice}
-          description={product.description}
-          ImgCard={product.ImgCard}
-        />
-      ))}
-    </div>
+<div>
+  <p className="section-title">Акции</p>
+  <div className="products-container">
+    {products.map((product) => (
+      <Card
+        key={product.id}
+        isOnSale={product.isOnSale}
+        isBestSeller={product.isBestSeller}
+        price={product.price}
+        salePrice={product.salePrice}
+        description={product.description}
+        ImgCard={product.ImgCard}
+      />
+    ))}
+  </div>
+</div>
+
+ 
   );
 }

@@ -11,7 +11,8 @@ import IconUser from '../../assets/icons/user-6-64.png'
 export default function Header() {
   return (
     <header className="header">
-    <div className="logo-img">
+      <div className="header-first">
+          <div className="logo-img">
       <img src={Imglogo} alt="logo" />
     </div>
     <button className="header-button">
@@ -21,6 +22,7 @@ export default function Header() {
       <input type="search" placeholder="Найти товар" />
       <img src={IconSearch} alt="Поиск" className="icon-search" />
     </div>
+      </div>
     <div className="icons">
       <div className="icon">
         <img src={IconFavorites} alt="Favorites" /> Избранное

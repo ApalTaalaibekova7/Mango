@@ -1,0 +1,32 @@
+.map-container {
+    text-align: center; /* Центрируем заголовки */
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .map-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .map-container h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .map-wrapper {
+    display: flex;
+    justify-content: center; /* Центрируем карту */
+  }
+  
+  .map {
+    width: 1000px; /* Задаём фиксированную ширину карты */
+    height: 500px; /* Задаём высоту карты */
+    border: 2px solid #ccc; /* Добавляем рамку */
+    border-radius: 8px; /* Скруглённые углы */
+    overflow: hidden; /* Чтобы карта не выходила за рамки */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для красоты */
+  }
+  

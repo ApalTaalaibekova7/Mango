@@ -1,9 +1,54 @@
-  /* Контейнер для карточек */
-  .products-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 16px;
-    padding: 16px;
-  }
-  
+/* Выравнивание заголовка "Акции" */
+.section-title {
+  font-size: 1.8rem; /* Крупный шрифт для акцента */
+  font-weight: bold; /* Жирное начертание */
+  text-align: center; /* Центрирование текста */
+  margin: 20px 0; /* Отступ сверху и снизу */
+  color: red; /* Цвет текста */
+}
 
+/* Контейнер для карточек */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 карточки в ряду */
+  row-gap: 15px; /* Расстояние между строками (вертикально) */
+  column-gap: 10px; /* Расстояние между столбцами (горизонтально) */
+  justify-content: center; /* Выравнивание карточек по центру */
+  max-width: 1200px; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Центровка контейнера */
+  padding: 20px;
+}
+
+
+/* Стили для мобильной версии */
+@media (max-width: 1200px) {
+  .products-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 карточки в ряду */
+  }
+}
+
+@media (max-width: 768px) {
+  .products-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 карточки в ряду */
+    column-gap: 10px; /* Расстояние между столбцами (горизонтально) */
+  }
+}
+
+@media (max-width: 480px) {
+  .products-container {
+    grid-template-columns: 1fr; /* 1 карточка в ряду */
+  }
+
+  .card-body {
+    padding: 12px;
+  }
+
+  .card-img-top {
+    height: 120px; /* Уменьшаем высоту изображения */
+  }
+
+  .btn {
+    font-size: 14px; /* Уменьшаем размер шрифта кнопки */
+    padding: 5px 20px; /* Уменьшаем отступы кнопки */
+  }
+}

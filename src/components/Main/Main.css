@@ -1,4 +1,3 @@
-
 /* Основной контейнер */
 .main {
     position: relative;
@@ -29,7 +28,6 @@
     text-align: center; /* Центрирование текста */
     display: flex;
     justify-content: center;
-    
 }
 
 /* Изображение продуктов */
@@ -41,12 +39,61 @@
 
 /* Заголовок */
 .headline {
-    font-size: 40px;
+    font-size: 50px;
     color: #333;
-    font-weight: bold;
+    font-weight: 900;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
 }
 .highlight {
-    color: rgb(235, 129, 8); /* Оранжевый цвет для выделенного слова */
+    color: #238b09; 
+    font-weight: bold;
+    
+}
+.kichi-market {
+    color:  #ff9800;
+}
+/* --- Адаптивный дизайн --- */
+@media (max-width: 1200px) {
+    .background {
+        height: 180px; /* Уменьшаем высоту фона */
+    }
+
+    .products-img {
+        width: 250px; /* Уменьшаем размер изображения */
+    }
+
+    .headline {
+        font-size: 32px; /* Уменьшаем размер заголовка */
+    }
+}
+
+@media (max-width: 768px) {
+    .background {
+        height: 150px; /* Ещё меньше высота для мобильных устройств */
+    }
+
+    .products-img {
+        width: 200px; /* Уменьшаем изображение */
+    }
+
+    .headline {
+        font-size: 28px; /* Уменьшаем заголовок для смартфонов */
+    }
+}
+
+@media (max-width: 480px) {
+    .background {
+        height: 120px; /* Минимальная высота фона */
+    }
+
+    .products-img {
+        width: 150px; /* Ещё меньше изображение */
+    }
+
+    .headline {
+        font-size: 24px; /* Компактный размер заголовка */
+    }
 }

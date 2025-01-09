@@ -12,7 +12,8 @@ export default function Main() {
     <div className="content">
       <img src={Products} alt="products" className="products-img" />
       <p className="headline">
-        <span className="highlight"> Манго </span> <br /> кичи маркети
+        <span className="highlight"> Манго </span>
+        <span className='kichi-market' >кичи маркети </span> 
       </p>
     </div>
   </main>

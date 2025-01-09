@@ -16,7 +16,7 @@ export default function Card({ isOnSale, isBestSeller, price, salePrice, descrip
         <h5 className="card-price">{price} сом</h5>
         {isOnSale && <h5 className="card-price-sale">{salePrice} сом</h5>}
         <p className="card-text">{description}</p>
-        <a href="#" className="btn">
+        <a href="#" className="btn btn-success">
           В корзину
         </a>
       </div>
